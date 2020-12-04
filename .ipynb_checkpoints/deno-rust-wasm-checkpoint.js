@@ -2,7 +2,7 @@
 // deno run -A deno-rust-wasm.js
 // deno run -A -r https://raw.githubusercontent.com/bohachu/deno-rust-wasm/main/deno-rust-wasm.js
 
-console.log("Install rust and wasm hello world template. 2020-12-04 by cbh@cameo.tw");
+console.log("v2 Install rust and wasm hello world template. 2020-12-04 by cbh@cameo.tw");
 import {exec} from "https://deno.land/x/exec/mod.ts";
 
 //系統要記得先安裝 wasm-pack: curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
