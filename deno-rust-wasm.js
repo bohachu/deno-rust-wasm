@@ -1,4 +1,6 @@
 // deno run -A deno-rust-wasm.js
+// deno run -A -r https://raw.githubusercontent.com/bohachu/deno-rust-wasm/main/deno-rust-wasm.js
+
 console.log("Install rust and wasm hello world template. 2020-12-04 by cbh@cameo.tw");
 import {exec} from "https://deno.land/x/exec/mod.ts";
 
@@ -27,9 +29,15 @@ Deno.writeTextFile("./hello-wasm/index.html", `
 </html>
 `);
 
+await exec(`open http://localhost:8000`);
+
 console.log("python server run at localhost:8000")
 Deno.writeTextFile("./web-server.sh", `
 cd hello-wasm
 python3 -m http.server 8000
 `);
 await exec(`bash web-server.sh`);
+
+
+
+
