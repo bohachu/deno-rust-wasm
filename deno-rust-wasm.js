@@ -8,6 +8,7 @@ import {exec} from "https://deno.land/x/exec/mod.ts";
 //系統要記得先安裝 wasm-pack: curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
 
 Deno.writeTextFile("./install.sh", `
+curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
 wasm-pack new hello-wasm
 cd hello-wasm
 wasm-pack build --target web
