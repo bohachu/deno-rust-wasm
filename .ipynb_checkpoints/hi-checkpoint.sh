@@ -1,0 +1,1 @@
+echo Hi 這是一個基礎的 shell 實驗
