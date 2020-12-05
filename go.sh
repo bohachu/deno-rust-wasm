@@ -33,5 +33,5 @@ echo '<html>
 echo 請運用瀏覽器 http://localhost:8866/ 來測試hello-wasm
 open http://localhost:8866/
 cd hello-wasm
-python3 -m http.server 8866
+nohup python3 -m http.server 8866 &
 
