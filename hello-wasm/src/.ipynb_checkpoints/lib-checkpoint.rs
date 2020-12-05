@@ -15,5 +15,5 @@ extern {
 
 #[wasm_bindgen]
 pub fn greet() {
-    alert("789 中文 Hello, hello-wasm!");
+    alert("xyz 許多中文都可以 Hello, hello-wasm!");
 }
