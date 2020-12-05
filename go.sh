@@ -1,4 +1,6 @@
-echo 全自動創建 rust and wasm 編譯模板程式碼，方便後續編輯 by cbh@cameo.tw 2020-12-05
+#一行搞定
+echo 'curl https://raw.githubusercontent.com/bohachu/deno-rust-wasm/main/go.sh | sh'
+echo '全自動創建 rust and wasm 編譯模板程式碼，方便後續編輯 by cbh@cameo.tw 2020-12-05'
 
 if ! [[ "$(rustup --version)" == *"rustup"* ]]; then
   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
